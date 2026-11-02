@@ -1,0 +1,8 @@
+/work/
+/outputs/
+.env
+.env.*
+*.local
+*.secret
+*.secrets
+secrets.*
