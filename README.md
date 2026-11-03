@@ -22,7 +22,7 @@ Exécuter les scripts dans cet ordre :
 2. **`sql/02_donnees_test.sql`** - insère les données source : 4 marques, 25 ingrédients, 12 boissons, 8 focaccias et leurs associations focaccia-ingrédient avec les quantités en grammes. À exécuter une seule fois sur une base `tifosi` vide ; ce script ne supprime ni ne remplace les données existantes.
 3. **`sql/03_requetes_test.sql`** - contient dix requêtes de vérification et distingue les résultats attendus des résultats obtenus.
 
-**`sql/00_compte_tifosi.example.sql` est facultatif** : c'est un exemple de configuration locale du compte `tifosi`, limité à la base `tifosi.*`. Le fichier contient seulement une valeur de mot de passe fictive. N'ajoutez aucun vrai mot de passe au fichier versionné et ne publiez aucun mot de passe réel sur GitHub. Gardez tout secret utilisé pour une configuration locale en dehors des fichiers versionnés.
+**`sql/00_compte_tifosi.example.sql` est facultatif** : c'est un exemple de configuration locale du compte `tifosi`. Le compte local `'tifosi'@'localhost'` a été créé, ses droits sur `tifosi.*` ont été vérifiés avec `SHOW GRANTS`, et la connexion a été testée sous MySQL 8.4.9. Le fichier `.example.sql` conserve uniquement une valeur de remplacement fictive : aucun vrai mot de passe n'y est inclus ni ne doit être publié sur GitHub. Gardez tout secret utilisé pour une configuration locale en dehors des fichiers versionnés.
 
 Les tables `client`, `menu`, `menu_boisson` et `achat` figurent dans le schéma, mais restent sans données de test, car les classeurs fournis n'en contiennent pas.
 
